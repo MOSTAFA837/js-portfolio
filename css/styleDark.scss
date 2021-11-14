@@ -1,0 +1,189 @@
+$mainBg: rgb(0, 0, 0);
+$secBg: #1b1b1b;
+$blackColor: #f4f5f6;
+$primeColor: #ff014f;
+$background-color: #161616;
+$box-shadow: -2px 7px 19px #1c1e22, -7px -4px 19px #262a2e;
+$prime-background: linear-gradient(to right bottom, #000000, #181818);
+$active-background: linear-gradient(180deg, #ff014f, #f74d80);
+$skills-box-shadow: 13px 15px 19px #181818, -15px -14px 19px #202020;
+
+// common
+
+body {
+    background-color: $mainBg;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $primeColor;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ff014daf;
+}
+
+p {
+    color: rgb(202, 202, 202);
+}
+
+.icons-wrapper {
+    .icon-link {
+        box-shadow: none;
+        background: $prime-background;
+        color: $blackColor;
+
+        &:hover {
+            background: $active-background;
+        }
+    }
+}
+
+.heading {
+    color: $blackColor;
+
+    &::before {
+        color: #ff014d49;
+    }
+}
+
+// Navbar
+.navbar {
+    background-color: $background-color;
+    box-shadow: $box-shadow;
+
+    .links-container {
+        .links-item {
+            .link {
+                color: $blackColor;
+
+                &.active {
+                    color: $primeColor;
+                }
+            }
+        }
+    }
+}
+
+
+
+// home section
+.home {
+    background-image: linear-gradient(to bottom, $secBg, $mainBg);
+
+    .hero-content {
+        .hero-heading {
+            color: $blackColor;
+        }
+        .sub-heading {
+            color: $primeColor;
+        }
+    }
+}
+
+
+.skills {
+    .skill-heading {
+        color: $primeColor;
+    }
+
+    .skill-container {
+        .skill-card {
+            background: $prime-background;
+
+            .skill {
+                color: rgb(110, 110, 110);
+            }
+
+            i {
+                color: $blackColor;
+            }
+
+            &:hover {
+                box-shadow: $skills-box-shadow;
+
+                .skill {
+                    color: $blackColor;
+                }
+            }
+        }
+    }
+}
+
+
+// project section
+.project {
+    background: $secBg;
+
+    .filters {
+        .filter-btn {
+            color: $primeColor;
+            box-shadow: $skills-box-shadow;
+            background: $prime-background;
+
+            &.active {
+                background: $active-background;
+                color: #fff;
+            }
+        }
+    }
+
+    .project-container {
+        .project-card {
+            color: $mainBg;
+            background: $mainBg;
+
+            .content {
+                .tags {
+                    color: $primeColor;
+                }
+
+                .link {
+                    color: $mainBg;
+
+                    .project-name {
+                        color: $blackColor;
+                    }
+
+                    i {
+                        color: $blackColor;
+                    }
+
+                    &:hover {
+                        .project-name, i {
+                            color: $primeColor;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                box-shadow: $skills-box-shadow;
+            }
+        }
+    }
+}
+
+
+// Contact
+.contact {
+    height: 60vh;
+    .heading::before {
+        content: "Let's Chat";
+    }
+
+    .icons-wrapper {
+        justify-content: center;
+    }
+}
+
+
+// Footer
+.footer {
+    color: $blackColor;
+    background: $secBg;
+    box-shadow: $box-shadow;
+
+    span {
+        color: burlywood;
+    }
+}

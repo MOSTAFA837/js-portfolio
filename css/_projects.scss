@@ -1,0 +1,127 @@
+// project section
+.project {
+    background: $secBg;
+    position: relative;
+    height: auto;
+
+    .heading::before {
+        content: 'Selected Work';
+    }
+
+    .filters {
+        width: fit-content;
+        display: block;
+        margin: 5rem auto;
+
+        .filter-btn {
+            padding: 1rem 2rem;
+            border-radius: .5rem;
+            border: none;
+            margin: 0 .5rem 1rem;
+            cursor: pointer;
+            font-size: 1.7rem;
+            color: $primeColor;
+            box-shadow: $skills-box-shadow;
+            background: $prime-background;
+            transition: .5s;
+
+            &.active {
+                transform: translateY(-0.5rem);
+                background: linear-gradient(180deg, #ee6f55, #f86348);
+                color: #fff;
+            }
+        }
+    }
+
+    .project-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem;
+
+        .project-card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            color: $mainBg;
+            padding: 2rem;
+            border-radius: 1rem;
+            background: $mainBg;
+            transition: all .5s;
+
+            .img-container {
+                overflow: hidden;
+                border-radius: 1rem;
+                margin-bottom: 2rem;
+
+                .img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transform: rotate(2deg);
+                    transition: transform 1s;
+                }
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-transform: capitalize;
+                opacity: 1;
+                transition: .5s .3s;
+
+                .tags {
+                    opacity: .9;
+                    width: 90%;
+                    font-size: 2rem;
+                    color: $primeColor;
+                    margin-bottom: 1rem;
+                }
+
+                .link {
+                    color: $mainBg;
+                    padding: .8rem 1.2rem;
+                    border-radius: 6rem;
+                    position: relative;
+
+                    .project-name {
+                        font-weight: 600;
+                        font-size: 2.5rem;
+                        color: $blackColor;
+                        display: inline-flex;
+                        transition: .5s;
+                    }
+
+                    i {
+                        font-size: 3rem;
+                        transition: all .5s;
+                        color: $blackColor;
+                    }
+
+                    &:hover {
+                        .project-name, i {
+                            color: $primeColor;
+                        }
+
+                        i {
+                            transform: rotate(-45deg);
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                box-shadow: $skills-box-shadow;
+
+                .img {
+                    transform: scale(1.1);
+                }
+            }
+
+            &.hide {
+                display: none;
+            }
+        }
+    }
+}

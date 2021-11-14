@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <img src="images/logo.svg" class="logo">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="links-container">
+            <li class="links-item"><a href="#home-section" class="link active">home</a></li>
+            <li class="links-item"><a href="#skills-section" class="link">skills</a></li>
+            <li class="links-item"><a href="#project-section" class="link">project</a></li>
+            <li class="links-item"><a href="#contact-section" class="link">contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- home section -->
+    <section class="home section-common" id="home-section">
+        <div class="hero-content">
+            <h2 class="hero-heading" data-aos="fade-up"><span class="highlight">hi, </span>i'm mostafa</h2>
+            <h3 class="sub-heading">i'm a front end developer</h3>
+
+            <div class="icons-wrapper">
+                <a href="#" class="icon-link">
+                    <i class='bx bxl-github'></i>
+                </a>
+                
+                <a href="https://www.facebook.com/profile.php?id=100004228836620" target="_blank" class="icon-link">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+
+                <a href="#" class="icon-link">
+                    <i class='bx bxl-linkedin-square'></i>
+                </a>
+
+                <a href="https://wa.link/ij99lg" target="_blank" class="icon-link">
+                    <i class='bx bxl-whatsapp'></i>
+                </a>
+            </div>
+        </div>
+        <div class="avatar">
+            <div class="image"></div>
+        </div>
+        <!-- <img src="images/my-image.jpg" data-aos="fade-left" class="image"> -->
+    </section>
+
+    <!-- skills section -->
+    <section class="skills section-common" id="skills-section" data-aos="fade-up">
+        <h2 class="heading">Skills</h2>
+        <p class="info-desc">
+            For more than 2 years our experts have been accomplishing enough with modern Web Development,
+            new generation web and app programming language.
+        </p>
+
+        <h3 class="skill-heading">here are languages and skills programming i can work with</h3>
+
+        <div class="skill-container" >
+                <div class="skill-card">
+                    <p class="skill" data-aos="fade-left">HTML5</p>
+                    <i class='bx bxl-html5' style='color:#e54c21'></i>
+                </div>
+                <div class="skill-card ">
+                    <p class="skill" data-aos="fade-right">CSS3</p>
+                    <i class='bx bxl-css3' style='color:#1795d0'></i>
+                </div>
+                <div class="skill-card">
+                    <p class="skill" data-aos="fade-left">SASS</p>
+                    <i class='bx bxl-sass' style='color:#c76494'></i>
+                </div>
+                <div class="skill-card ">
+                    <p class="skill" data-aos="fade-up">JAVASCRIPT</p>
+                    <i class='bx bxl-javascript' style='color:#f7e018'></i>
+                </div>
+                <div class="skill-card " >
+                    <p class="skill" data-aos="fade-down">ReactJS</p>
+                    <i class='bx bxl-react' style='color:#61dbfb'></i>
+                </div>
+                <div class="skill-card " >
+                    <p class="skill" data-aos="fade-down">Git</p>
+                    <i class='bx bxl-git' style='color:#e84d31'  ></i>
+                </div>
+                <!-- <div class="skill-card">
+                    <p class="skill" data-aos="fade-up">NodeJS</p>
+                    <i class='bx bxl-nodejs' style='color:#7fc728'></i>
+                </div> -->
+        </div>
+    </section>
+
+    <section class="project section-common" id="project-section" data-aos="fade-right">
+        <h2 class="heading">Projects</h2>
+
+        <div class="filters">
+            <button class="filter-btn active" id="all">All</button>
+            <button class="filter-btn" id="HTML&CSS">HTML&CSS</button>
+            <button class="filter-btn" id="#Mini-Projects">Mini Projects</button>
+            <button class="filter-btn" id="javascript">Vanilla JS</button>
+            <!-- <button class="filter-btn" id="React">React JS</button> -->
+        </div>
+
+        <div class="project-container">
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-common" id="contact-section">
+        <h2 class="heading">Contact</h2>
+
+        <div class="icons-wrapper">
+            <a href="https://www.facebook.com/profile.php?id=100004228836620" target="_blank" class="icon-link">
+                <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="https://wa.link/ij99lg" target="_blank" class="icon-link">
+                <i class='bx bxl-whatsapp'></i>
+            </a>
+        </div>
+
+
+        <!-- <div class="contact-form">
+            <div class="name" data-aos="fade-up">
+                <input type="text" class="first-name" required  placeholder="first name" data-aos="fade-up">
+                <input type="text" class="last-name" required  placeholder="last name" data-aos="fade-up">
+            </div>
+
+            <input type="email" class="email" required placeholder="email">
+            <textarea class="message" placeholder="message" required></textarea>
+            <button class="btn btn-contact">Contact</button>
+        </div> -->
+    </section>
+
+    <footer class="footer">
+        Made With <span>&#x2665;</span> By<img src="images/logo.svg" alt="">
+    </footer>
+
+    
+    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

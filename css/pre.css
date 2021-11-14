@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(to bottom, rgb(205, 240, 247), rgb(154, 232, 248));
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+h1, h2 {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.modes {
+    padding: 1rem;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light img, .dark img {
+    padding: .5rem;
+    border: .3rem solid rgb(0, 0, 0);
+    width: 80%;
+    border-radius: .5rem;
+}
+
+.light, .dark {
+    text-align: center;
+    transition: .5s;
+    width: calc(90% / 2);
+    cursor: pointer;
+    position: relative;
+}
+
+.intro-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.light p, .dark p {
+    font-size: 3rem;
+}
+
+.light:hover, .dark:hover {
+    transform: scale(1.1);
+}

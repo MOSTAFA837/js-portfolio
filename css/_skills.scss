@@ -1,0 +1,67 @@
+.skills {
+    height: auto;
+
+    .heading {
+        &::before {
+            content: 'Programming skills';
+        }
+    }
+
+    .info-desc {
+        font-size: 2rem;
+    }
+
+    .skill-heading {
+        text-transform: capitalize;
+        font-size: 2.5rem;
+        font-weight: 500;
+        color: $primeColor;
+        margin: 4rem 0;
+    }
+
+    .skill-container {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+
+        .skill-card {
+            height: 20rem;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+            background: $prime-background;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .5s;
+
+            .skill {
+                font-size: 3rem;
+                font-weight: 600;
+                color: rgb(110, 110, 110);
+                transition: all .6s;
+            }
+
+            i {
+                font-size: 10rem;
+                filter: grayscale(100%);
+                transition: filter .6s;
+                color: $blackColor;
+            }
+
+            &:hover {
+                transform: translateY(1rem);
+                box-shadow: $skills-box-shadow;
+
+                .skill {
+                    color: $blackColor;
+                }
+
+                i {
+                    filter: grayscale(0);
+                }
+            }
+        }
+    }
+}

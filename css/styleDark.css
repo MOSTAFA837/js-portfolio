@@ -1,0 +1,92 @@
+body {
+  background-color: black; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff014f; }
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff014daf; }
+
+p {
+  color: #cacaca; }
+
+.icons-wrapper .icon-link {
+  box-shadow: none;
+  background: linear-gradient(to right bottom, #000000, #181818);
+  color: #f4f5f6; }
+  .icons-wrapper .icon-link:hover {
+    background: linear-gradient(180deg, #ff014f, #f74d80); }
+
+.heading {
+  color: #f4f5f6; }
+  .heading::before {
+    color: #ff014d49; }
+
+.navbar {
+  background-color: #161616;
+  box-shadow: -2px 7px 19px #1c1e22, -7px -4px 19px #262a2e; }
+  .navbar .links-container .links-item .link {
+    color: #f4f5f6; }
+    .navbar .links-container .links-item .link.active {
+      color: #ff014f; }
+
+.home {
+  background-image: linear-gradient(to bottom, #1b1b1b, black); }
+  .home .hero-content .hero-heading {
+    color: #f4f5f6; }
+  .home .hero-content .sub-heading {
+    color: #ff014f; }
+
+.skills .skill-heading {
+  color: #ff014f; }
+.skills .skill-container .skill-card {
+  background: linear-gradient(to right bottom, #000000, #181818); }
+  .skills .skill-container .skill-card .skill {
+    color: #6e6e6e; }
+  .skills .skill-container .skill-card i {
+    color: #f4f5f6; }
+  .skills .skill-container .skill-card:hover {
+    box-shadow: 13px 15px 19px #181818, -15px -14px 19px #202020; }
+    .skills .skill-container .skill-card:hover .skill {
+      color: #f4f5f6; }
+
+.project {
+  background: #1b1b1b; }
+  .project .filters .filter-btn {
+    color: #ff014f;
+    box-shadow: 13px 15px 19px #181818, -15px -14px 19px #202020;
+    background: linear-gradient(to right bottom, #000000, #181818); }
+    .project .filters .filter-btn.active {
+      background: linear-gradient(180deg, #ff014f, #f74d80);
+      color: #fff; }
+  .project .project-container .project-card {
+    color: black;
+    background: black; }
+    .project .project-container .project-card .content .tags {
+      color: #ff014f; }
+    .project .project-container .project-card .content .link {
+      color: black; }
+      .project .project-container .project-card .content .link .project-name {
+        color: #f4f5f6; }
+      .project .project-container .project-card .content .link i {
+        color: #f4f5f6; }
+      .project .project-container .project-card .content .link:hover .project-name, .project .project-container .project-card .content .link:hover i {
+        color: #ff014f; }
+    .project .project-container .project-card:hover {
+      box-shadow: 13px 15px 19px #181818, -15px -14px 19px #202020; }
+
+.contact {
+  height: 60vh; }
+  .contact .heading::before {
+    content: "Let's Chat"; }
+  .contact .icons-wrapper {
+    justify-content: center; }
+
+.footer {
+  color: #f4f5f6;
+  background: #1b1b1b;
+  box-shadow: -2px 7px 19px #1c1e22, -7px -4px 19px #262a2e; }
+  .footer span {
+    color: burlywood; }
+
+/*# sourceMappingURL=styleDark.css.map */
