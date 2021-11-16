@@ -1,17 +1,17 @@
-$mainBg: rgb(0, 0, 0);
-$secBg: #1b1b1b;
-$blackColor: #f4f5f6;
+$mainBg: #16161649;
+$secBg: #1616161c;
+$blackColor: #c4cfde;
 $primeColor: #ff014f;
 $background-color: #161616;
-$box-shadow: -2px 7px 19px #1c1e22, -7px -4px 19px #262a2e;
-$prime-background: linear-gradient(to right bottom, #000000, #181818);
+$box-shadow: linear-gradient(145deg, #1e2024, #23272b);
+$prime-background: linear-gradient(to right bottom, #212428, #252a30);
 $active-background: linear-gradient(180deg, #ff014f, #f74d80);
-$skills-box-shadow: 13px 15px 19px #181818, -15px -14px 19px #202020;
+$skills-box-shadow: 5px 5px 19px #1c1e22, -5px -5px 19px #262a2e;
 
 // common
 
 body {
-    background-color: $mainBg;
+    background-color: #212428;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -28,7 +28,7 @@ p {
 
 .icons-wrapper {
     .icon-link {
-        box-shadow: none;
+        box-shadow: $box-shadow;
         background: $prime-background;
         color: $blackColor;
 
@@ -64,8 +64,6 @@ p {
     }
 }
 
-
-
 // home section
 .home {
     background-image: linear-gradient(to bottom, $secBg, $mainBg);
@@ -74,12 +72,12 @@ p {
         .hero-heading {
             color: $blackColor;
         }
+
         .sub-heading {
             color: $primeColor;
         }
     }
 }
-
 
 .skills {
     .skill-heading {
@@ -89,6 +87,7 @@ p {
     .skill-container {
         .skill-card {
             background: $prime-background;
+            box-shadow: $skills-box-shadow;
 
             .skill {
                 color: rgb(110, 110, 110);
@@ -100,6 +99,7 @@ p {
 
             &:hover {
                 box-shadow: $skills-box-shadow;
+                background: linear-gradient(to left top, #2124289d, #252a30cb);
 
                 .skill {
                     color: $blackColor;
@@ -107,8 +107,35 @@ p {
             }
         }
     }
-}
 
+    .service-section {
+        .service-head {
+            color: #fff;
+
+            span {
+                color: $primeColor;
+            }
+
+            &::after {
+                background-color: $primeColor;
+            }
+        }
+
+        .services {
+            .service {
+                &-heading {
+                    color: rgb(190, 190, 190);
+                }
+
+                &:hover {
+                    i {
+                        color: $primeColor;
+                    }
+                }
+            }
+        }
+    }
+}
 
 // project section
 .project {
@@ -116,7 +143,7 @@ p {
 
     .filters {
         .filter-btn {
-            color: $primeColor;
+            color: $blackColor;
             box-shadow: $skills-box-shadow;
             background: $prime-background;
 
@@ -163,10 +190,10 @@ p {
     }
 }
 
-
 // Contact
 .contact {
     height: 60vh;
+
     .heading::before {
         content: "Let's Chat";
     }
@@ -176,7 +203,6 @@ p {
     }
 }
 
-
 // Footer
 .footer {
     color: $blackColor;
@@ -185,5 +211,94 @@ p {
 
     span {
         color: burlywood;
+    }
+}
+
+// responsive
+// Tablet View
+
+@media (max-width: 996px) {
+    // toggle btn
+    .toggle-btn {
+        span {
+            background-color: $blackColor;
+        }
+    }
+
+    .navbar .links-container {
+        background-color: #161616c2;
+        width: 100%;
+        left: 0;
+        padding: 0 10vw;
+        flex-direction: column;
+        transition: .5s;
+        opacity: 0;
+        pointer-events: none;
+
+        &.show {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .links-item .link {
+            margin-left: auto;
+            text-align: center;
+            display: block;
+        }
+    }
+
+    // Home Section
+    .home {
+        flex-direction: column-reverse;
+        height: fit-content;
+        padding-bottom: 5rem;
+
+        .hero-content {
+            width: 70%;
+            min-width: 35rem;
+            text-align: center;
+
+            .hero-heading {
+                font-size: 4.5rem;
+            }
+
+            .profession span {
+                display: block;
+            }
+        }
+
+        .image {
+            width: 35rem;
+            box-shadow: 1rem 0rem 0rem 0rem #ff9480, -1rem -1rem 0rem 0rem #ffb2a4;
+        }
+    }
+
+    .skills .skill-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+// Mobile View
+@media (max-width: 500px) {
+    html {
+        font-size: 1.2rem;
+    }
+
+    .home .profession {
+        margin: auto;
+
+        span {
+            font-size: 3rem;
+            text-align: center;
+        }
+    }
+
+    .skills .skill-container .skill-card {
+        grid-column: 2 span;
+    }
+
+    .skills .skill-container,
+    .project .project-container {
+        grid-template-columns: 1fr;
     }
 }

@@ -1,5 +1,5 @@
 body {
-  background-color: black; }
+  background-color: #212428; }
 
 ::-webkit-scrollbar-thumb {
   background-color: #ff014f; }
@@ -11,69 +11,81 @@ p {
   color: #cacaca; }
 
 .icons-wrapper .icon-link {
-  box-shadow: none;
-  background: linear-gradient(to right bottom, #000000, #181818);
-  color: #f4f5f6; }
+  box-shadow: linear-gradient(145deg, #1e2024, #23272b);
+  background: linear-gradient(to right bottom, #212428, #252a30);
+  color: #c4cfde; }
   .icons-wrapper .icon-link:hover {
     background: linear-gradient(180deg, #ff014f, #f74d80); }
 
 .heading {
-  color: #f4f5f6; }
+  color: #c4cfde; }
   .heading::before {
     color: #ff014d49; }
 
 .navbar {
   background-color: #161616;
-  box-shadow: -2px 7px 19px #1c1e22, -7px -4px 19px #262a2e; }
+  box-shadow: linear-gradient(145deg, #1e2024, #23272b); }
   .navbar .links-container .links-item .link {
-    color: #f4f5f6; }
+    color: #c4cfde; }
     .navbar .links-container .links-item .link.active {
       color: #ff014f; }
 
 .home {
-  background-image: linear-gradient(to bottom, #1b1b1b, black); }
+  background-image: linear-gradient(to bottom, #1616161c, #16161649); }
   .home .hero-content .hero-heading {
-    color: #f4f5f6; }
+    color: #c4cfde; }
   .home .hero-content .sub-heading {
     color: #ff014f; }
 
 .skills .skill-heading {
   color: #ff014f; }
 .skills .skill-container .skill-card {
-  background: linear-gradient(to right bottom, #000000, #181818); }
+  background: linear-gradient(to right bottom, #212428, #252a30);
+  box-shadow: 5px 5px 19px #1c1e22, -5px -5px 19px #262a2e; }
   .skills .skill-container .skill-card .skill {
     color: #6e6e6e; }
   .skills .skill-container .skill-card i {
-    color: #f4f5f6; }
+    color: #c4cfde; }
   .skills .skill-container .skill-card:hover {
-    box-shadow: 13px 15px 19px #181818, -15px -14px 19px #202020; }
+    box-shadow: 5px 5px 19px #1c1e22, -5px -5px 19px #262a2e;
+    background: linear-gradient(to left top, #2124289d, #252a30cb); }
     .skills .skill-container .skill-card:hover .skill {
-      color: #f4f5f6; }
+      color: #c4cfde; }
+.skills .service-section .service-head {
+  color: #fff; }
+  .skills .service-section .service-head span {
+    color: #ff014f; }
+  .skills .service-section .service-head::after {
+    background-color: #ff014f; }
+.skills .service-section .services .service-heading {
+  color: #bebebe; }
+.skills .service-section .services .service:hover i {
+  color: #ff014f; }
 
 .project {
-  background: #1b1b1b; }
+  background: #1616161c; }
   .project .filters .filter-btn {
-    color: #ff014f;
-    box-shadow: 13px 15px 19px #181818, -15px -14px 19px #202020;
-    background: linear-gradient(to right bottom, #000000, #181818); }
+    color: #c4cfde;
+    box-shadow: 5px 5px 19px #1c1e22, -5px -5px 19px #262a2e;
+    background: linear-gradient(to right bottom, #212428, #252a30); }
     .project .filters .filter-btn.active {
       background: linear-gradient(180deg, #ff014f, #f74d80);
       color: #fff; }
   .project .project-container .project-card {
-    color: black;
-    background: black; }
+    color: #16161649;
+    background: #16161649; }
     .project .project-container .project-card .content .tags {
       color: #ff014f; }
     .project .project-container .project-card .content .link {
-      color: black; }
+      color: #16161649; }
       .project .project-container .project-card .content .link .project-name {
-        color: #f4f5f6; }
+        color: #c4cfde; }
       .project .project-container .project-card .content .link i {
-        color: #f4f5f6; }
+        color: #c4cfde; }
       .project .project-container .project-card .content .link:hover .project-name, .project .project-container .project-card .content .link:hover i {
         color: #ff014f; }
     .project .project-container .project-card:hover {
-      box-shadow: 13px 15px 19px #181818, -15px -14px 19px #202020; }
+      box-shadow: 5px 5px 19px #1c1e22, -5px -5px 19px #262a2e; }
 
 .contact {
   height: 60vh; }
@@ -83,10 +95,66 @@ p {
     justify-content: center; }
 
 .footer {
-  color: #f4f5f6;
-  background: #1b1b1b;
-  box-shadow: -2px 7px 19px #1c1e22, -7px -4px 19px #262a2e; }
+  color: #c4cfde;
+  background: #1616161c;
+  box-shadow: linear-gradient(145deg, #1e2024, #23272b); }
   .footer span {
     color: burlywood; }
+
+@media (max-width: 996px) {
+  .toggle-btn span {
+    background-color: #c4cfde; }
+
+  .navbar .links-container {
+    background-color: #161616c2;
+    width: 100%;
+    left: 0;
+    padding: 0 10vw;
+    flex-direction: column;
+    transition: .5s;
+    opacity: 0;
+    pointer-events: none; }
+    .navbar .links-container.show {
+      opacity: 1;
+      pointer-events: all; }
+    .navbar .links-container .links-item .link {
+      margin-left: auto;
+      text-align: center;
+      display: block; }
+
+  .home {
+    flex-direction: column-reverse;
+    height: fit-content;
+    padding-bottom: 5rem; }
+    .home .hero-content {
+      width: 70%;
+      min-width: 35rem;
+      text-align: center; }
+      .home .hero-content .hero-heading {
+        font-size: 4.5rem; }
+      .home .hero-content .profession span {
+        display: block; }
+    .home .image {
+      width: 35rem;
+      box-shadow: 1rem 0rem 0rem 0rem #ff9480, -1rem -1rem 0rem 0rem #ffb2a4; }
+
+  .skills .skill-container {
+    grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 500px) {
+  html {
+    font-size: 1.2rem; }
+
+  .home .profession {
+    margin: auto; }
+    .home .profession span {
+      font-size: 3rem;
+      text-align: center; }
+
+  .skills .skill-container .skill-card {
+    grid-column: 2 span; }
+
+  .skills .skill-container,
+  .project .project-container {
+    grid-template-columns: 1fr; } }
 
 /*# sourceMappingURL=styleDark.css.map */

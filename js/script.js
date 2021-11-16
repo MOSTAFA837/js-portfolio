@@ -80,8 +80,8 @@ const email = document.querySelector('.email');
 const msg = document.querySelector('.message');
 
 
-// AOS
-AOS.init({
-    offset:80,
-    duration: 2000,
-})
+// // AOS
+// AOS.init({
+//     offset:80,
+//     duration: 2000,
+// })

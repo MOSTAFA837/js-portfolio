@@ -14,7 +14,7 @@
         flex-direction: column;
         justify-content: space-between;
         text-transform: capitalize;
-
+        text-align: center;
 
         .hero-heading {
             font-size: 6rem;
@@ -49,8 +49,8 @@
             animation: myImage 8s ease-in-out infinite 1s;
             background-blend-mode: multiply;
             -webkit-box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, 30%);
-            -moz-box-shadow: inset 0px 0px 0px 9px rgba(255,255,255,.3);
-            box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255 , 30%);
+            -moz-box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, 0.3);
+            box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, 30%);
         }
     }
 }
@@ -72,14 +72,15 @@
     }
 }
 
-
 @keyframes myImage {
     0% {
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
+
     50% {
         border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
     }
+
     100% {
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }

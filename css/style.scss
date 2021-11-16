@@ -49,13 +49,13 @@ a {
 }
 
 .icons-wrapper {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 
     .icon-link {
         box-shadow: $box-shadow;
         background: $prime-background;
-        margin-right: 2rem;
+        margin:0 2rem 2rem 0;
         width: 8rem;
         height: 8rem;
         padding: 2rem;
@@ -146,8 +146,6 @@ a {
                 position: relative;
                 font-size: 2rem;
                 transition: all .5s;
-
-                
 
                 &.active {
                     color: $primeColor;

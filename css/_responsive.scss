@@ -2,7 +2,7 @@
 
 @media (max-width: 996px) {
     html {
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
 
     // toggle btn
@@ -74,7 +74,9 @@
         .hero-content {
             width: 70%;
             min-width: 35rem;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             .hero-heading {
                 font-size: 4.5rem;
@@ -96,18 +98,70 @@
     }
 }
 
+@media (max-width: 780px) {
+    .hero-content {
+        .hero-heading {
+            font-size: 4rem !important;
+            font-weight: 500;
+        }
+
+        .sub-heading {
+            font-size: 2.5rem !important;
+            margin: 2rem 0 6rem;
+            color: $primeColor;
+        }
+    }
+
+    .icons-wrapper {
+        grid-template-columns: repeat(2, 1fr) !important;
+
+        .icon-link {
+            width: 100%;
+        }
+    }
+
+    .skill-container {
+        .skill-card {
+            flex-direction: column-reverse;
+
+            .skill {
+                font-size: 2.2rem !important;
+            }
+        }
+    }
+
+    .skills .service-section .services {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 15rem;
+
+        .service {
+            margin: 3rem;
+
+            &-heading {
+                margin: 0;
+            }
+        }
+    }
+
+    .project-container {
+        grid-template-columns: 1fr !important;
+    }
+}
+
 // Mobile View
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     html {
         font-size: 1.2rem;
     }
 
-    .home .profession {
-        margin: auto;
+    .home {
+        .profession {
+            margin: auto;
 
-        span {
-            font-size: 3rem;
-            text-align: center;
+            span {
+                font-size: 3rem;
+                text-align: center;
+            }
         }
     }
 
@@ -115,8 +169,65 @@
         grid-column: 2 span;
     }
 
+    .skills .service-section .services {
+        grid-template-columns: 1fr;
+        margin-bottom: 45rem;
+
+        .service {
+            i {
+                font-size: 8rem;
+            }
+
+            &-heading {
+                margin: 0;
+            }
+        }
+    }
+
+    .filters {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .project-container {
+        .project-card {
+            .content {
+                .tags {
+                    font-size: 1.5rem !important;
+                }
+
+                .link {
+                    .project-name {
+                        font-size: 2rem !important;
+                    }
+                }
+            }
+        }
+    }
+
     .skills .skill-container,
     .project .project-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+    }
+
+    .contact {
+        .icons-wrapper {
+            display: flex;
+        }
+    }
+
+    .footer {
+        padding-top: 5rem;
+        flex-direction: column;
+
+        span {
+            color: burlywood;
+            font-size: 5rem;
+        }
+
+        img {
+            width: 12rem;
+            margin-top: -5rem;
+        }
     }
 }
