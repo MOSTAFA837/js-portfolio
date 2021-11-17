@@ -84,3 +84,43 @@ h2 {
 .light:hover, .dark:hover {
     transform: scale(1.1);
 }
+
+@media (max-width: 900px) {
+    .img-logo {
+        width: 10rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .modes {
+        flex-direction: column;
+    }
+
+    .light, .dark {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .light, .dark {
+        width: 60%;
+    }
+    .light {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .light, .dark {
+        width: 80%;
+    }
+    .light {
+        margin-bottom: 2rem;
+    }
+}
