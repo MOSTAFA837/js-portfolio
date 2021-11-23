@@ -16,7 +16,7 @@
             position: absolute;
             width: 100%;
             height: .2rem;
-            // background-color: $blackColor;
+            background-color: $blackColor;
             top: 30%;
             transition: .5s;
 
@@ -43,7 +43,7 @@
     .navbar .links-container {
         position: absolute;
         top: 6rem;
-        // background-color: $secBg;
+        background-color: $secBg;
         width: 100%;
         left: 0;
         padding: 0 10vw;
@@ -107,7 +107,7 @@
         .sub-heading {
             font-size: 2.5rem !important;
             margin: 2rem 0 6rem;
-            // color: $primeColor;
+            color: $primeColor;
         }
     }
 
@@ -233,10 +233,6 @@
 
 @media (max-width: 450px) {
     body {
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-        // flex-direction: column;
         overflow-x: hidden;
         max-width: 100%;
     }
@@ -249,7 +245,7 @@
             top: -130% !important;
         }
     }
-    
+
     .skills .info-desc {
         font-size: 1.5rem;
     }
@@ -273,7 +269,7 @@
     .footer {
         font-size: 2rem;
 
-        img{
+        img {
             width: 10rem;
         }
     }

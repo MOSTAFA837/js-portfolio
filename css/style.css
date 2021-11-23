@@ -281,6 +281,7 @@
       position: absolute;
       width: 100%;
       height: .2rem;
+      background-color: #000;
       top: 30%;
       transition: .5s; }
       .toggle-btn span:nth-child(2) {
@@ -295,6 +296,7 @@
   .navbar .links-container {
     position: absolute;
     top: 6rem;
+    background-color: #e9e9e9;
     width: 100%;
     left: 0;
     padding: 0 10vw;
@@ -336,7 +338,8 @@
     font-weight: 500; }
   .hero-content .sub-heading {
     font-size: 2.5rem !important;
-    margin: 2rem 0 6rem; }
+    margin: 2rem 0 6rem;
+    color: #ff4522; }
 
   .icons-wrapper {
     grid-template-columns: repeat(2, 1fr) !important; }

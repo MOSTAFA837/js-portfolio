@@ -34,7 +34,7 @@ p {
       color: #ff014f; }
 
 .home {
-  background-image: linear-gradient(to bottom, #1616161c, #16161649); }
+  background-image: linear-gradient(to bottom, #161616ee, #16161649); }
   .home .hero-content .hero-heading {
     color: #c4cfde; }
   .home .hero-content .sub-heading {
@@ -45,8 +45,6 @@ p {
 .skills .skill-container .skill-card {
   background: linear-gradient(to right bottom, #212428, #252a30);
   box-shadow: 5px 5px 19px #1c1e22, -5px -5px 19px #262a2e; }
-  .skills .skill-container .skill-card .skill {
-    color: #6e6e6e; }
   .skills .skill-container .skill-card i {
     color: #c4cfde; }
   .skills .skill-container .skill-card:hover {
@@ -66,7 +64,7 @@ p {
   color: #ff014f; }
 
 .project {
-  background: #1616161c; }
+  background: #161616ee; }
   .project .filters .filter-btn {
     color: #c4cfde;
     box-shadow: 5px 5px 19px #1c1e22, -5px -5px 19px #262a2e;
@@ -92,7 +90,17 @@ p {
 
 .footer {
   color: #c4cfde;
-  background: #1616161c;
+  background: #161616ee;
   box-shadow: linear-gradient(145deg, #1e2024, #23272b); }
+
+@media (max-width: 996px) {
+  .toggle-btn span {
+    background-color: #c4cfde; }
+
+  .navbar .links-container {
+    background-color: #161616ee; } }
+@media (max-width: 780px) {
+  .hero-content .sub-heading {
+    color: #ff014f; } }
 
 /*# sourceMappingURL=styleDark.css.map */

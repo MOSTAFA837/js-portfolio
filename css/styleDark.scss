@@ -1,5 +1,5 @@
 $mainBg: #16161649;
-$secBg: #1616161c;
+$secBg: #161616ee;
 $blackColor: #c4cfde;
 $primeColor: #ff014f;
 $background-color: #161616;
@@ -92,10 +92,6 @@ p {
         .skill-card {
             background: $prime-background;
             box-shadow: $skills-box-shadow;
-
-            .skill {
-                color: rgb(110, 110, 110);
-            }
 
             i {
                 color: $blackColor;
@@ -201,4 +197,25 @@ p {
     color: $blackColor;
     background: $secBg;
     box-shadow: $box-shadow;
+}
+
+@media (max-width: 996px) {
+    // toggle btn
+    .toggle-btn {
+        span {
+            background-color: $blackColor;
+        }
+    }
+
+    .navbar .links-container {
+        background-color: $secBg;
+    }
+}
+
+@media (max-width: 780px) {
+    .hero-content {
+        .sub-heading {
+            color: $primeColor;
+        }
+    }
 }
