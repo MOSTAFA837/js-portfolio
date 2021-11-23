@@ -14,6 +14,10 @@ body {
     background-color: #212428;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 ::-webkit-scrollbar-thumb {
     background-color: $primeColor;
 }
@@ -76,10 +80,6 @@ p {
         .sub-heading {
             color: $primeColor;
         }
-    }
-
-    .avatar .image {
-        background: u;
     }
 }
 
@@ -195,114 +195,10 @@ p {
 }
 
 // Contact
-.contact {
-    height: 60vh;
-
-    .heading::before {
-        content: "Let's Chat";
-    }
-
-    .icons-wrapper {
-        justify-content: center;
-    }
-}
 
 // Footer
 .footer {
     color: $blackColor;
     background: $secBg;
     box-shadow: $box-shadow;
-
-    span {
-        color: burlywood;
-    }
-}
-
-// responsive
-// Tablet View
-
-@media (max-width: 996px) {
-    // toggle btn
-    .toggle-btn {
-        span {
-            background-color: $blackColor;
-        }
-    }
-
-    .navbar .links-container {
-        background-color: #161616c2;
-        width: 100%;
-        left: 0;
-        padding: 0 10vw;
-        flex-direction: column;
-        transition: .5s;
-        opacity: 0;
-        pointer-events: none;
-
-        &.show {
-            opacity: 1;
-            pointer-events: all;
-        }
-
-        .links-item .link {
-            margin-left: auto;
-            text-align: center;
-            display: block;
-        }
-    }
-
-    // Home Section
-    .home {
-        flex-direction: column-reverse;
-        height: fit-content;
-        padding-bottom: 5rem;
-
-        .hero-content {
-            width: 70%;
-            min-width: 35rem;
-            text-align: center;
-
-            .hero-heading {
-                font-size: 4.5rem;
-            }
-
-            .profession span {
-                display: block;
-            }
-        }
-
-        .image {
-            width: 35rem;
-            box-shadow: 1rem 0rem 0rem 0rem #ff9480, -1rem -1rem 0rem 0rem #ffb2a4;
-        }
-    }
-
-    .skills .skill-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-// Mobile View
-@media (max-width: 500px) {
-    html {
-        font-size: 1.2rem;
-    }
-
-    .home .profession {
-        margin: auto;
-
-        span {
-            font-size: 3rem;
-            text-align: center;
-        }
-    }
-
-    .skills .skill-container .skill-card {
-        grid-column: 2 span;
-    }
-
-    .skills .skill-container,
-    .project .project-container {
-        grid-template-columns: 1fr;
-    }
 }

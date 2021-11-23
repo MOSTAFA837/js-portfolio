@@ -1,6 +1,9 @@
 body {
   background-color: #212428; }
 
+html {
+  font-size: 62.5%; }
+
 ::-webkit-scrollbar-thumb {
   background-color: #ff014f; }
 
@@ -36,8 +39,6 @@ p {
     color: #c4cfde; }
   .home .hero-content .sub-heading {
     color: #ff014f; }
-  .home .avatar .image {
-    background: u; }
 
 .skills .skill-heading {
   color: #ff014f; }
@@ -89,74 +90,9 @@ p {
     .project .project-container .project-card:hover {
       box-shadow: 5px 5px 19px #1c1e22, -5px -5px 19px #262a2e; }
 
-.contact {
-  height: 60vh; }
-  .contact .heading::before {
-    content: "Let's Chat"; }
-  .contact .icons-wrapper {
-    justify-content: center; }
-
 .footer {
   color: #c4cfde;
   background: #1616161c;
   box-shadow: linear-gradient(145deg, #1e2024, #23272b); }
-  .footer span {
-    color: burlywood; }
-
-@media (max-width: 996px) {
-  .toggle-btn span {
-    background-color: #c4cfde; }
-
-  .navbar .links-container {
-    background-color: #161616c2;
-    width: 100%;
-    left: 0;
-    padding: 0 10vw;
-    flex-direction: column;
-    transition: .5s;
-    opacity: 0;
-    pointer-events: none; }
-    .navbar .links-container.show {
-      opacity: 1;
-      pointer-events: all; }
-    .navbar .links-container .links-item .link {
-      margin-left: auto;
-      text-align: center;
-      display: block; }
-
-  .home {
-    flex-direction: column-reverse;
-    height: fit-content;
-    padding-bottom: 5rem; }
-    .home .hero-content {
-      width: 70%;
-      min-width: 35rem;
-      text-align: center; }
-      .home .hero-content .hero-heading {
-        font-size: 4.5rem; }
-      .home .hero-content .profession span {
-        display: block; }
-    .home .image {
-      width: 35rem;
-      box-shadow: 1rem 0rem 0rem 0rem #ff9480, -1rem -1rem 0rem 0rem #ffb2a4; }
-
-  .skills .skill-container {
-    grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 500px) {
-  html {
-    font-size: 1.2rem; }
-
-  .home .profession {
-    margin: auto; }
-    .home .profession span {
-      font-size: 3rem;
-      text-align: center; }
-
-  .skills .skill-container .skill-card {
-    grid-column: 2 span; }
-
-  .skills .skill-container,
-  .project .project-container {
-    grid-template-columns: 1fr; } }
 
 /*# sourceMappingURL=styleDark.css.map */
